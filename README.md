@@ -31,14 +31,14 @@ or pass a proc to decide later:
 	    Radiant::Config['mailer.layout'] || 'email'
 	  end
 	
-You can also set layout for each message:
+You can also set layout for each message by calling the message_layout setter directly:
 
 	radiant_layout :default_email
 	
 	def admonish(user)
   	  subject "bad user! bad!"
 	  recipients user.email
-	  radiant_layout "angry"
+	  message_layout "angry"
 	  ...
 	end
 	
