@@ -1,6 +1,7 @@
 class MessagePage < Page
-  display_name "Not really a page at all"
-
+  display_name "Email message"
+  attr_accessor :mailer_vars
+  
   def find_by_url(url, live=true, clean=true)
     self
   end

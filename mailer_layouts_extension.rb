@@ -3,21 +3,12 @@
 
 class MailerLayoutsExtension < Radiant::Extension
   version "1.0"
-  description "Describe your extension here"
+  description "Allows the use of radiant layouts in email messages"
   url "http://github.com/spanner/radiant-mailer_layouts-extension"
-  
-  # extension_config do |config|
-  #   config.gem 'some-awesome-gem
-  #   config.after_initialize do
-  #     run_something
-  #   end
-  # end
-
-  # See your config/routes.rb file in this extension to define custom routes
-  
+    
   def activate
-    # tab 'Content' do
-    #   add_item "Mailer Layouts", "/admin/mailer_layouts", :after => "Pages"
-    # end
+    require 'mailer_layouts'
+    MessagePage
+    ActionView::Base.send :include, MailerHelper
   end
 end

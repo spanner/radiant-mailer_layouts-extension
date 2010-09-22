@@ -3,7 +3,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "radiant-mailer_layouts-extension"
     gem.summary = %Q{Mailer Layouts Extension for Radiant CMS}
-    gem.description = %Q{Describe your extension here}
+    gem.description = %Q{Allows the use of radiant layouts in email messages}
     gem.email = "will@spanner.org"
     gem.homepage = "http://github.com/spanner/radiant-mailer_layouts-extension"
     gem.authors = ["spanner"]
