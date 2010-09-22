@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{radiant-mailer_layouts-extension}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["spanner"]
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.files = [
     "README.md",
      "Rakefile",
+     "VERSION",
      "app/models/message_page.rb",
      "app/views/layouts/radiant_mailer.html.haml",
      "config/locales/en.yml",
@@ -29,6 +30,8 @@ Gem::Specification.new do |s|
      "lib/mailer_layouts.rb",
      "lib/tasks/mailer_layouts_extension_tasks.rake",
      "mailer_layouts_extension.rb",
+     "pkg/radiant-mailer_layouts-extension-0.1.0.gem",
+     "radiant-mailer_layouts-extension.gemspec",
      "spec/datasets/mailer_layouts_dataset.rb",
      "spec/lib/mailer_layouts_extension_spec.rb",
      "spec/models/notifier_spec.rb",

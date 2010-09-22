@@ -14,7 +14,15 @@ ActionMailer is nasty inside and relies heavily on instance variables that we ha
 
 ## Installation
 
+	# gem install radiant-mailer_layouts-extension
+	
+and in environment.rb:
 
+	config.gem "radiant-mailer_layouts-extension"
+	
+or for integration with older projects:
+
+	git submodule add git://github.com/spanner/radiant-mailer_layouts-extension.git vendor/extensions/mailer_layouts
 
 ## Usage
 
