@@ -12,6 +12,10 @@ Newly extracted from our fork of `share_layouts`. This code has been in use for 
 
 ActionMailer is nasty inside and relies heavily on instance variables that we have to set from the outside, so if there are bugs they tend to be a bit obscure.
 
+## Todo
+
+Set `message.content_type` automatically to `layout.content_type`.
+
 ## Installation
 
 	# gem install radiant-mailer_layouts-extension
@@ -51,6 +55,13 @@ You can also set layout for each message by calling the message_layout setter di
 	end
 	
 Note that the instance method will overrule the default layout name set by the class method, but it requires that class declaration has been used first to bring in the necessary machinery.
+
+## Configuration
+
+Make sure this extension loads before any that defines Notifiers, such as `reader`. Here's one I use quite often:
+
+	config.extensions = [ :layouts, :mailer_layouts, :reader, :all, :library ]
+
 
 ## Copyright
 
